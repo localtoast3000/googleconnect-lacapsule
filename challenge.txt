@@ -1,0 +1,17 @@
+👉 Take the time to read the documentation to add a Google sign-in button:
+
+https://www.npmjs.com/package/@react-oauth/google
+https://cloud.google.com/endpoints/docs/frameworks/java/creating-client-ids#web-client
+
+👉 Add the Google sign-in button where indicated in the code. On click, 
+you should be able to log into the app and retrieve the name and email 
+associated with the account. These clues will help you:
+
+You will need to add a test user (your email with which you will test the connection) 
+within the OAuth consent screen.
+
+The response received via the @react-oauth/google module will contain a “credential” 
+character string that must be decoded via the jwt-decode module: https://www.npmjs.com/package/jwt-decode
+
+👉 When the user is logged in, modify the Home page to display only "Welcome" followed 
+by the user's name and email as on the second model.
